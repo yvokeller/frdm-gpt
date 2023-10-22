@@ -2,6 +2,9 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 
+import wandb
+import time
+
 # hyperparameters
 batch_size = 64 # how many independent sequences will we process in parallel?
 block_size = 256 # what is the maximum context length for predictions?
@@ -211,6 +214,24 @@ class GPTLanguageModel(nn.Module):
 model = GPTLanguageModel()
 m = model.to(device)
 
+# WandB – Initialize a new run
+wandb.login()
+run = wandb.init(
+    # Set the project where this run will be logged
+    entity="yvokeller",
+    project="frdm-GPT",
+    # Track hyperparameters and run metadata
+    config={
+        "learning_rate": learning_rate,
+        "batch_size": batch_size,
+        "max_iters": max_iters,
+        "eval_interval": eval_interval,
+        "n_emb_d": n_emb_d,
+        "n_head": n_head,
+        "n_layer": n_layer,
+        "dropout": dropout,
+    })
+
 # create a PyTorch optimizer
 optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
 
@@ -219,6 +240,7 @@ for iter in range(max_iters):
     if iter % eval_interval == 0:
         losses = estimate_loss()
         print(f"step {iter}: train loss {losses['train']:.4f}, val loss {losses['val']:.4f}")
+        wandb.log({"train_loss": losses['train'], "val_loss": losses['val']})
 
     # sample a batch of data
     xb, yb = get_batch('train')
@@ -228,6 +250,9 @@ for iter in range(max_iters):
     optimizer.zero_grad(set_to_none=True)
     loss.backward()
     optimizer.step()
+
+# save the model to disk with current data and time as name
+torch.save(model.state_dict(), f"gpt-{time.time()}.pth")
 
 # generate from the model
 context = torch.zeros((1, 1), dtype=torch.long, device=device)
