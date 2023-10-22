@@ -1,0 +1,245 @@
+ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/bigram.py
+step 0: train loss 4.9466, val loss 4.9548
+step 300: train loss 2.7186, val loss 2.7173
+step 600: train loss 2.4266, val loss 2.4246
+step 900: train loss 2.3735, val loss 2.3704
+step 1200: train loss 2.3561, val loss 2.3541
+step 1500: train loss 2.3584, val loss 2.3435
+step 1800: train loss 2.3449, val loss 2.3321
+step 2100: train loss 2.3392, val loss 2.3305
+step 2400: train loss 2.3419, val loss 2.3354
+step 2700: train loss 2.3466, val loss 2.3257
+
+»Kene isins Nacht gersierem ireichorung Ersschaunin wimllichrhenkomke wer Aun ste Vor? 
+»Gr. d.
+»Vor Ded waschdur dien orufeich minte plticht. der wölter ohlastrsemm ur. min r ks apt grs. ditzuchaben Wien Was kolachisen gerden, We duch Korge hendat, Se d deserirfen htt s Veichen den. dengendeiet Benölun. vor ufredtenauchmweraufr d an dichie s st ät Kn sc3Hachein Genier iigrdie unte autehteserufohan. Tübe h Schdininde Ditn, akichr ich Dinden, Sch herumerdellte ble Un emm Frge zwenerriflöt wön gen
+❯ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/bigram.py
+step 0: train loss 4.9466, val loss 4.9548
+step 300: train loss 2.7186, val loss 2.7173
+step 600: train loss 2.4266, val loss 2.4246
+step 900: train loss 2.3735, val loss 2.3704
+step 1200: train loss 2.3561, val loss 2.3541
+step 1500: train loss 2.3584, val loss 2.3435
+step 1800: train loss 2.3449, val loss 2.3321
+step 2100: train loss 2.3392, val loss 2.3305
+step 2400: train loss 2.3419, val loss 2.3354
+step 2700: train loss 2.3466, val loss 2.3257
+
+Tisppe marben wenebttzibim hr eum. un, haurahend Ef be zdindimeromen bin vo Legand. lchndeosteirh Zu. Wal se jenege ver, del Sier m steufürch Gen icköne Jar stent t biendr de Seleichitrt m irtwauhrwier zie Weichirschin nderagerhndadanker ein egen den dam vos Menesezwühwkönleufextam h as? it, Mern.
+»Eit sor vemehenuerht ielstert ssk enöldeies meind Kolberanglersteichäserzugenn Insen stweieith enn wus urmmin htübeißm benendigen. fachruckörmppp it ir wGenerabemurt henis, mungster wäs andine korh ve
+❯ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/bigram.py
+True
+step 0: train loss 4.9466, val loss 4.9548
+step 300: train loss 2.7186, val loss 2.7173
+step 600: train loss 2.4266, val loss 2.4246
+step 900: train loss 2.3735, val loss 2.3704
+step 1200: train loss 2.3561, val loss 2.3541
+step 1500: train loss 2.3584, val loss 2.3435
+step 1800: train loss 2.3449, val loss 2.3321
+step 2100: train loss 2.3392, val loss 2.3305
+step 2400: train loss 2.3419, val loss 2.3354
+step 2700: train loss 2.3466, val loss 2.3257
+
+Tisppe marben wenebttzibim hr eum. un, haurahend Ef be zdindimeromen bin vo Legand. lchndeosteirh Zu. Wal se jenege ver, del Sier m steufürch Gen icköne Jar stent t biendr de Seleichitrt m irtwauhrwier zie Weichirschin nderagerhndadanker ein egen den dam vos Menesezwühwkönleufextam h as? it, Mern.
+»Eit sor vemehenuerht ielstert ssk enöldeies meind Kolberanglersteichäserzugenn Insen stweieith enn wus urmmin htübeißm benendigen. fachruckörmppp it ir wGenerabemurt henis, mungster wäs andine korh ve
+
+❯ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/bigram.py
+True
+False
+step 0: train loss 4.9466, val loss 4.9548
+step 300: train loss 2.7186, val loss 2.7173
+step 600: train loss 2.4266, val loss 2.4246
+^CTraceback (most recent call last):
+  File "/Users/yvokeller/Code/frdmauthor/bigram.py", line 130, in <module>
+    optimizer.step()
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/lib/python3.10/site-packages/torch/optim/optimizer.py", line 373, in wrapper
+    out = func(*args, **kwargs)
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/lib/python3.10/site-packages/torch/optim/optimizer.py", line 76, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/lib/python3.10/site-packages/torch/optim/adamw.py", line 184, in step
+    adamw(
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/lib/python3.10/site-packages/torch/optim/adamw.py", line 335, in adamw
+    func(
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/lib/python3.10/site-packages/torch/optim/adamw.py", line 413, in _single_tensor_adamw
+    exp_avg_sq.mul_(beta2).addcmul_(grad, grad, value=1 - beta2)
+KeyboardInterrupt
+
+❯ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/bigram.py
+True
+False
+step 0: train loss 4.9466, val loss 4.9548
+step 300: train loss 2.7186, val loss 2.7173
+step 600: train loss 2.4266, val loss 2.4246
+step 900: train loss 2.3735, val loss 2.3704
+step 1200: train loss 2.3561, val loss 2.3541
+step 1500: train loss 2.3584, val loss 2.3435
+step 1800: train loss 2.3449, val loss 2.3321
+step 2100: train loss 2.3392, val loss 2.3305
+step 2400: train loss 2.3419, val loss 2.3354
+step 2700: train loss 2.3466, val loss 2.3257
+
+»Kene isins Nacht gersierem ireichorung Ersschaunin wimllichrhenkomke wer Aun ste Vor? 
+»Gr. d.
+»Vor Ded waschdur dien orufeich minte plticht. der wölter ohlastrsemm ur. min r ks apt grs. ditzuchaben Wien Was kolachisen gerden, We duch Korge hendat, Se d deserirfen htt s Veichen den. dengendeiet Benölun. vor ufredtenauchmweraufr d an dichie s st ät Kn sc3Hachein Genier iigrdie unte autehteserufohan. Tübe h Schdininde Ditn, akichr ich Dinden, Sch herumerdellte ble Un emm Frge zwenerriflöt wön gen
+❯ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python
+Python 3.10.9 | packaged by conda-forge | (main, Feb  2 2023, 20:26:08) [Clang 14.0.6 ] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print('Using device:', device)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'device' is not defined
+>>> exit()
+❯ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/bigram.py
+Using device: cpu
+step 0: train loss 4.9466, val loss 4.9548
+step 300: train loss 2.7186, val loss 2.7173
+step 600: train loss 2.4266, val loss 2.4246
+step 900: train loss 2.3735, val loss 2.3704
+step 1200: train loss 2.3561, val loss 2.3541
+step 1500: train loss 2.3584, val loss 2.3435
+step 1800: train loss 2.3449, val loss 2.3321
+step 2100: train loss 2.3392, val loss 2.3305
+step 2400: train loss 2.3419, val loss 2.3354
+step 2700: train loss 2.3466, val loss 2.3257
+
+»Kene isins Nacht gersierem ireichorung Ersschaunin wimllichrhenkomke wer Aun ste Vor? 
+»Gr. d.
+»Vor Ded waschdur dien orufeich minte plticht. der wölter ohlastrsemm ur. min r ks apt grs. ditzuchaben Wien Was kolachisen gerden, We duch Korge hendat, Se d deserirfen htt s Veichen den. dengendeiet Benölun. vor ufredtenauchmweraufr d an dichie s st ät Kn sc3Hachein Genier iigrdie unte autehteserufohan. Tübe h Schdininde Ditn, akichr ich Dinden, Sch herumerdellte ble Un emm Frge zwenerriflöt wön gen
+❯ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/bigram.py
+Using device: mps
+step 0: train loss 4.9466, val loss 4.9548
+step 300: train loss 2.7186, val loss 2.7173
+step 600: train loss 2.4266, val loss 2.4246
+step 900: train loss 2.3735, val loss 2.3704
+step 1200: train loss 2.3561, val loss 2.3541
+step 1500: train loss 2.3584, val loss 2.3435
+step 1800: train loss 2.3449, val loss 2.3321
+step 2100: train loss 2.3392, val loss 2.3305
+step 2400: train loss 2.3419, val loss 2.3354
+step 2700: train loss 2.3466, val loss 2.3257
+
+Tisppe marben wenebttzibim hr eum. un, haurahend Ef be zdindimeromen bin vo Legand. lchndeosteirh Zu. Wal se jenege ver, del Sier m steufürch Gen icköne Jar stent t biendr de Seleichitrt m irtwauhrwier zie Weichirschin nderagerhndadanker ein egen den dam vos Menesezwühwkönleufextam h as? it, Mern.
+»Eit sor vemehenuerht ielstert ssk enöldeies meind Kolberanglersteichäserzugenn Insen stweieith enn wus urmmin htübeißm benendigen. fachruckörmppp it ir wGenerabemurt henis, mungster wäs andine korh ve
+❯ git init
+Initialized empty Git repository in /Users/yvokeller/Code/frdmauthor/.git/
+❯ git add .
+❯ git commit -m 'Initial commit'
+[main (root-commit) a5b7938] Initial commit
+ 3 files changed, 1330 insertions(+)
+ create mode 100644 ansturm.txt
+ create mode 100644 bigram.py
+ create mode 100644 frdm-gpt.ipynb
+❯ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/v2.py
+Using device: mps
+step 0: train loss 4.4658, val loss 4.4562
+step 300: train loss 2.3832, val loss 2.3582
+step 600: train loss 2.3568, val loss 2.3560
+step 900: train loss 2.3571, val loss 2.3512
+step 1200: train loss 2.3532, val loss 2.3525
+step 1500: train loss 2.3559, val loss 2.3497
+step 1800: train loss 2.3557, val loss 2.3374
+step 2100: train loss 2.3443, val loss 2.3462
+step 2400: train loss 2.3508, val loss 2.3466
+step 2700: train loss 2.3592, val loss 2.3457
+
+»Jalte mah geneteh min bimier eut. un, hastahen Köf be zdindimeroren bin vo Legand. lchn, osteis. Zu. Walele jenen Lut We gamar Po, steufürch Gen ickinehJar stentet bien d de meleichitrt m irtwamireier miel, Geiteschin n zuchrohndadanker ein egen den mam vost fnesezldabkönleufextavo. as? it, Mern. dalag or vemehen. Z
+»Fausstert mik enöger es meien Kolien Rennesteichäserzugenn. asen stweieith Den wus urmmin htübeiße benen Tanendesocu Can mppp it ir wehehanbemert henis, mingster wäs an ben korhlsc
+❯ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/gpt.py
+Using device: mps
+Traceback (most recent call last):
+  File "/Users/yvokeller/Code/frdmauthor/gpt.py", line 163, in <module>
+    losses = estimate_loss()
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/Users/yvokeller/Code/frdmauthor/gpt.py", line 66, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/yvokeller/Code/frdmauthor/gpt.py", line 123, in forward
+    x = self.sa_head(x) # apply one head of self-attention (B,T,C)
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/yvokeller/Code/frdmauthor/gpt.py", line 96, in forward
+    wei = self.dropout(wei)
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1695, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'Head' object has no attribute 'dropout'
+❯ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/gpt.py
+Using device: mps
+step 0: train loss 4.4242, val loss 4.4234
+step 500: train loss 2.5317, val loss 2.5404
+step 1000: train loss 2.3673, val loss 2.3624
+step 1500: train loss 2.3211, val loss 2.3207
+step 2000: train loss 2.3028, val loss 2.2880
+step 2500: train loss 2.2816, val loss 2.2767
+step 3000: train loss 2.2849, val loss 2.2730
+step 3500: train loss 2.2737, val loss 2.2589
+step 4000: train loss 2.2494, val loss 2.2496
+step 4500: train loss 2.2497, val loss 2.2441
+
+
+
+Wölt marben wenebttz bim Krweum. In, waurgechöng vod zeindimeromen zwielo Legaße. Dabersoscher. Zuer Hiele jene uft rüs Lamte Po, dreufürch eherickine Jarvstent tgeir, dert ischen.« Er daurn! Ihrich om Plädes irschin nderagerhn Pfanker ein eg de bönlder Beh en zuz dabkönleuf ind. Ich habt, Mern.
+»Eist oh ewürhen. Z
+
+Fiel Sert sst ewövor es Has djesind anglerstein. Ger Dachn hasten Gabeirth ezu wus urmmin htübeiße ben nd Trechesoch Cöarmpeprit ähne hehanbemert henist ming Der wäs and an komm ve
+❯ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/gpt.py/opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/bigram-multi-head-self-attention.py
+/opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python: can't open file '/Users/yvokeller/Code/frdmauthor/gpt.py/opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python': [Errno 2] No such file or directory
+❯ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/bigram-multi-head-self-attention.py
+Using device: mps
+step 0: train loss 4.4562, val loss 4.4610
+step 500: train loss 2.5005, val loss 2.5032
+step 1000: train loss 2.3333, val loss 2.3261
+step 1500: train loss 2.2656, val loss 2.2569
+step 2000: train loss 2.2265, val loss 2.2046
+step 2500: train loss 2.1877, val loss 2.1790
+step 3000: train loss 2.1792, val loss 2.1613
+step 3500: train loss 2.1553, val loss 2.1331
+step 4000: train loss 2.1240, val loss 2.1165
+step 4500: train loss 2.1168, val loss 2.1055
+
+Tlalte mahnen wenhertz bim ur eut. 
+Gvorlichhen Köffbe zut. 
+Neigond bister Keinke. 
+Sanden. Ich da er Hielf dmach eit un gande Po, drauf ich eheigegire Jarversit täbieger der, lein.« Epem irt! Ihrich lich unde irschen nie anzt gerdanket ein etin dam mam vond ens ezwedekönleus ind. Ich miit, anrn.
+»Vie Mohreckt eiverht imt Seit sis ewölde es Hallde sind anglersteinen Sit genn. 
+Sen staben Moch, daus urmmen habl an. Dues die und auf unn Sicht inder weheht berert henist mitgster wärstichan komhen 
+❯ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/bigram-multi-head-self-attention.py
+Using device: mps
+step 0: train loss 4.4150, val loss 4.4130
+step 500: train loss 2.4136, val loss 2.3948
+step 1000: train loss 2.2538, val loss 2.2429
+step 1500: train loss 2.1945, val loss 2.1814
+step 2000: train loss 2.1473, val loss 2.1173
+step 2500: train loss 2.0950, val loss 2.0809
+step 3000: train loss 2.0728, val loss 2.0565
+step 3500: train loss 2.0640, val loss 2.0319
+step 4000: train loss 2.0322, val loss 2.0194
+step 4500: train loss 2.0078, val loss 1.9877
+
+Tlad. 
+Gannuncuten mich im Krecht. 
+Gegelicht dang von zu nich ausst zwir ohnegand. 
+Sterso. »Ver Zu. Wal seinmum stut seing de Po, dreuf ich sheigegine Jarver nert bieger der, um Beit mippirn derreit mit Rud sites dir nichmgerhen danken einmegen damm. Momteht nes zweifkönleuf der. Ich habt, anrn der kontrutwerhen eihm im wir verst ewövor es miede Kolber Rinner Wir vom Miten, dassen Gebenithen, dall unmmen habe an um Send Trech auf und richt in ihne hehr ber bege wieln wagster ges and an kommen 
+
+❯ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/gpt-residual-connections.py
+Using device: mps
+step 0: train loss 4.4508, val loss 4.4463
+step 500: train loss 2.3100, val loss 2.2797
+step 1000: train loss 2.1522, val loss 2.1207
+step 1500: train loss 2.0831, val loss 2.0477
+step 2000: train loss 2.0032, val loss 1.9838
+step 2500: train loss 1.9822, val loss 1.9494
+step 3000: train loss 1.9513, val loss 1.9103
+step 3500: train loss 1.8906, val loss 1.8858
+step 4000: train loss 1.8778, val loss 1.8576
+step 4500: train loss 1.8654, val loss 1.8435
+
+Tlat.
+»Garben wenn mich im Krecht. In, haben mein freutegenig verund zwiel Tarz kein kannso. Ich da er Hauff dem vervorcu gange Porcortuf ich ehen Walde? Nehr entft bider watz, leibeit vernige! Ihren. »Wie er sit schinde zumgerhallen.
+
+Moptige. Ich mit mich hich zuz dabkönleungleich. Ich ist anrnefällt sorgewegereuerhelt gringt! Wenen. Meine Hallt stlich Renner Wald sein genichtsen starzeithen, dass unmerauftür an. Dusk die Ocher Punch begeprittäfte hehteben begren sind, grieser, sondene kommene
