@@ -1,3 +1,5 @@
+# Chart
+
 ```mermaid
 graph TD
     Node1[Node 1]
