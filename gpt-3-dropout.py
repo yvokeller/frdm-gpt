@@ -11,6 +11,9 @@ learning_rate = 1e-3
 device = 'mps' if torch.backends.mps.is_available() else 'cpu'
 eval_iters = 200
 n_emb_d = 32 # number of embedding dimensions
+n_head = 6
+n_layer = 6
+dropout = 0.2
 # ------------
 
 # check if we have a GPU
@@ -80,7 +83,7 @@ class Head(nn.Module):
         self.value = nn.Linear(n_emb_d, head_size, bias=False)
         self.register_buffer('tril', torch.tril(torch.ones(block_size, block_size)))
 
-        # self.dropout = nn.Dropout(dropout)
+        self.dropout = nn.Dropout(dropout)
 
     def forward(self, x):
         # input of size (batch, time-step, channels)
@@ -94,7 +97,7 @@ class Head(nn.Module):
         wei = wei.masked_fill(self.tril[:T, :T] == 0, float('-inf')) # (B, T, T)
         wei = F.softmax(wei, dim=-1) # (B, T, T)
         
-        # wei = self.dropout(wei)
+        wei = self.dropout(wei)
 
         # perform the weighted aggregation of the values
         v = self.value(x) # (B,T,hs)
@@ -108,14 +111,13 @@ class MultiHeadAttention(nn.Module):
         super().__init__()
         self.heads = nn.ModuleList([Head(head_size) for _ in range(num_heads)]) # instantiate num_heads heads
         self.proj = nn.Linear(head_size * num_heads, n_emb_d)
-
-        # self.dropout = nn.Dropout(dropout)
+        self.dropout = nn.Dropout(dropout)
 
     def forward(self, x):
         # run the heads all in parallel into a list of tensors and concatenate the outputs over C (channel dimension)
         out = torch.cat([h(x) for h in self.heads], dim=-1)
         out = self.proj(out) # linear transformation of the output from sa-heads for residual pathway
-        # out = self.dropout(self.proj(out))
+        out = self.dropout(out)
         return out
 
 class FeedFoward(nn.Module):
@@ -127,7 +129,7 @@ class FeedFoward(nn.Module):
             nn.Linear(n_emb_d, 4 * n_emb_d),
             nn.ReLU(),
             nn.Linear(4 * n_emb_d, n_emb_d), # projection layer for going back into the residual pathway
-            # nn.Dropout(dropout),
+            nn.Dropout(dropout),
         )
 
     def forward(self, x):
@@ -161,12 +163,6 @@ class GPTLanguageModel(nn.Module):
         # instead of a single head, we use multiple heads in parallel with lower dimensionality
         self.sa_heads = MultiHeadAttention(4, n_emb_d // 4) # i.e. 4 heads of 8-dimensionsional self-attention
         # blocks
-        self.blocks = nn.Sequential(
-            Block(n_emb_d, n_head=4),
-            Block(n_emb_d, n_head=4),
-            Block(n_emb_d, n_head=4),
-            nn.LayerNorm(n_emb_d),
-        )
         self.blocks = nn.Sequential(*[Block(n_emb_d, n_head=n_head) for _ in range(n_layer)])
         # final layer norm
         self.ln_f = nn.LayerNorm(n_emb_d)
@@ -182,6 +178,7 @@ class GPTLanguageModel(nn.Module):
         x = token_emb + pos_emb # (B,T,C) | x now not only holds token identity, but also position at which the token occurs
         x = self.sa_heads(x) # apply one head of self-attention (B,T,C)
         x = self.blocks(x) # (B,T,C) | note: this is run on a per-token level! self-attention is run on a per-sequence level and allowed the tokens to interact with each other
+        x = self.ln_f(x) # (B,T,C)
         logits = self.lm_head(x) # (B,T,vocab_size)
 
         if targets is None:
