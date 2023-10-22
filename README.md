@@ -2,7 +2,7 @@
 
 Fun sunday project, implementing a "Attention Is All You Need"-style GPT model, after reading the paper for the first time. I based this on Andrej Karpathy's great "Let's build GPT: from scratch, in code, spelled out" lecture available on [YouTube](https://www.youtube.com/watch?v=kCc8FmEb1nY&t), with a little twist:
 
-I am using the text of my 2017 german fantasy novel "ANSTURM" as the dataset.
+I am using the text of my 2017 german fantasy novel "ANSTURM" as the dataset, instead of Shakespeare.
 
 Let's see what the model comes up with. Maybe I can even write the sequel with it's help :)
 
