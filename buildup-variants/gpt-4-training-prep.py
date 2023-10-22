@@ -162,8 +162,6 @@ class GPTLanguageModel(nn.Module):
         self.token_embedding_table = nn.Embedding(vocab_size, n_emb_d)
         # not only enbed token identity, but also position! each position from 0 to block_size-1 gets its own embedding vector
         self.position_embedding_table = nn.Embedding(block_size, n_emb_d)
-        # instead of a single head, we use multiple heads in parallel with lower dimensionality
-        self.sa_heads = MultiHeadAttention(4, n_emb_d // 4) # i.e. 4 heads of 8-dimensionsional self-attention
         # blocks
         self.blocks = nn.Sequential(*[Block(n_emb_d, n_head=n_head) for _ in range(n_layer)])
         # final layer norm
@@ -178,7 +176,6 @@ class GPTLanguageModel(nn.Module):
         token_emb = self.token_embedding_table(idx) # (B,T,C)
         pos_emb = self.position_embedding_table(torch.arange(T, device=device)) # (T,C) | integer sequence from 0 to T-1
         x = token_emb + pos_emb # (B,T,C) | x now not only holds token identity, but also position at which the token occurs
-        x = self.sa_heads(x) # apply one head of self-attention (B,T,C)
         x = self.blocks(x) # (B,T,C) | note: this is run on a per-token level! self-attention is run on a per-sequence level and allowed the tokens to interact with each other
         x = self.ln_f(x) # (B,T,C)
         logits = self.lm_head(x) # (B,T,vocab_size)
