@@ -243,3 +243,23 @@ Tlat.
 »Garben wenn mich im Krecht. In, haben mein freutegenig verund zwiel Tarz kein kannso. Ich da er Hauff dem vervorcu gange Porcortuf ich ehen Walde? Nehr entft bider watz, leibeit vernige! Ihren. »Wie er sit schinde zumgerhallen.
 
 Moptige. Ich mit mich hich zuz dabkönleungleich. Ich ist anrnefällt sorgewegereuerhelt gringt! Wenen. Meine Hallt stlich Renner Wald sein genichtsen starzeithen, dass unmerauftür an. Dusk die Ocher Punch begeprittäfte hehteben begren sind, grieser, sondene kommene
+
+❯ /opt/homebrew/Caskroom/miniforge/base/envs/deep-learning/bin/python /Users/yvokeller/Code/frdmauthor/gpt-2-layernorm.py
+Using device: mps
+step 0: train loss 4.5611, val loss 4.5529
+step 500: train loss 2.2694, val loss 2.2415
+step 1000: train loss 2.0935, val loss 2.0635
+step 1500: train loss 2.0177, val loss 1.9787
+step 2000: train loss 1.9483, val loss 1.9304
+step 2500: train loss 1.9163, val loss 1.8884
+step 3000: train loss 1.8881, val loss 1.8542
+step 3500: train loss 1.8354, val loss 1.8272
+step 4000: train loss 1.8211, val loss 1.8107
+step 4500: train loss 1.8166, val loss 1.7952
+
+Tlat.
+»Garzum Abendren bin vorcum. Der Mir gemetal von zum Wimmer entzimmer angand. Dabeiso. »Grupor. Wie leunmur und von einer Portrtet hich von ich weiß das entfogen geradt melten.« Er mainnetringt. »Wie um die Märuf nie anzehen danken. Wir genauben. Moment entzez dabkönnen. Werwö. Is? ist Mernöfplikt ohnen
+
+Einversten Amurett stalnende Ast, sein Dieso RRangen.
+
+»»Um Miten, hasten vor einem zu wurdurch. Ihr du hat zu nach und auf und begeprunderne Mehreben bege wieder, gatGrog, mand vor. Er ve
