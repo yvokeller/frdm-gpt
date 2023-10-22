@@ -4,7 +4,7 @@ import time
 import json
 import torch
 
-mode = 'test'
+mode = 'big'
 
 if mode == 'test':
     # TEST hparam config
@@ -23,7 +23,7 @@ elif mode == 'big':
     batch_size = 64 # how many independent sequences will we process in parallel?
     block_size = 256 # what is the maximum context length for predictions?
     max_iters = 5000
-    eval_interval = 500
+    eval_interval = 250
     learning_rate = 3e-4 # reduced as network is much bigge
     eval_iters = 200
     n_emb_d = 384 # number of embedding dimensions

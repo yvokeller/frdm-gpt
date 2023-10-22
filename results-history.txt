@@ -269,3 +269,42 @@ SMALL:
 
 Sitz besorhen sim enten wir, ein uns horeckten mir.wor Facht. 
 »Ich beerhabstter an ich klat löffehren gewirze. Ob. Änlen. Minen in Mil hat tramme weittigen Tragersta milen sicht simm Werwarinds hau hanzt vierschein wir dunder Schliss enweich einen sil, du den Zeuern zurück? Ich so misst die Keren zu leich ersteken aus im Sear nichme mit lie pahr und erst ist meinschlicht versändend nad stitem Tilt beif mür ich nach sar erepe Zur dassürter Aute behänder um hertell, ich nicht diese Schin gas eenh
+
+
+ python train_model.py
+['\n', ' ', '!', ',', '.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ':', '?', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '|', '«', '»', 'Ä', 'Ö', 'Ü', 'ß', 'ä', 'ö', 'ü', '–', '’', '‚']
+Total parameters: 10801233
+Trainable parameters: 10801233
+wandb: Currently logged in as: yvokeller (sensor-based-activity-recognition). Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: yvokeller. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.15.12
+wandb: Run data is saved locally in /Users/yvokeller/Code/frdm-gpt/src/wandb/run-20231022_235404-epq7y3gn
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run driven-firefly-12
+wandb: ⭐️ View project at https://wandb.ai/yvokeller/frdm-GPT
+wandb: 🚀 View run at https://wandb.ai/yvokeller/frdm-GPT/runs/epq7y3gn
+step 0: train loss 4.5630, val loss 4.5612
+step 250: train loss 2.2677, val loss 2.2598
+step 500: train loss 1.7569, val loss 1.7465
+step 750: train loss 1.4854, val loss 1.5003
+step 1000: train loss 1.3292, val loss 1.3864
+step 1250: train loss 1.2156, val loss 1.3251
+step 1500: train loss 1.1201, val loss 1.2900
+step 1750: train loss 1.0356, val loss 1.2698
+step 2000: train loss 0.9505, val loss 1.2646
+step 2250: train loss 0.8663, val loss 1.2781
+step 2500: train loss 0.7886, val loss 1.3033
+step 2750: train loss 0.7102, val loss 1.3408
+step 3000: train loss 0.6240, val loss 1.3715
+step 3250: train loss 0.5509, val loss 1.4135
+step 3500: train loss 0.4814, val loss 1.4705
+step 3750: train loss 0.4121, val loss 1.5394
+step 4000: train loss 0.3537, val loss 1.5826
+step 4250: train loss 0.2983, val loss 1.6663
+step 4500: train loss 0.2502, val loss 1.7238
+step 4750: train loss 0.2136, val loss 1.7947
+step 4999: train loss 0.1800, val loss 1.8650
+
+Würden und der Gestalt werden, versuch immer mehr wären. Die Äuhe verblickt kann ich die Einführung der Menschheit ineingelangen Lauft von seiner Stadt betrachten, um die Ordne zwischen zwei Tung liegen muss. Was mir diese zerfliegen deiner ein.« 
+Endgült ertönen Tag reicht. Eine hdere Stimme in tiefer tot und entfernt sind die letzte Leben und verschwundende Gruppe wird vom. Der Begegenbegie, die Überprückwocher auf die anderen, habe ich mir vorhin die Zukunft. Eine Maume ist gibt Schn sowein j
+wandb: Waiting for W&B process to finish... (success).
