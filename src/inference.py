@@ -25,5 +25,7 @@ model.load_state_dict(torch.load('../models/gpt.pt'))
 model.eval()
 
 # generate from the model
-context = torch.zeros((1, 1), dtype=torch.long, device=hparams['device'])
+context = torch.zeros((1, 1), dtype=torch.long, device=hparams['device']) # newline
+context = torch.tensor(encode('Sokrate liess den Wald mit den Werwölfen hinter sich und '), dtype=torch.long, device=hparams['device']).unsqueeze(0) # custom context
+
 print(decode(model.generate(context, max_new_tokens=500)[0].tolist()))
