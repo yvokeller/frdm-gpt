@@ -17,10 +17,10 @@ lora_layers: 16
 batch_size: 4
 
 # Iterations to train for.
-iters: 50
+iters: 190  # 190 * 5
 
 # Number of validation batches, -1 uses the entire validation set.
-val_batches: 5
+val_batches: 6  # ~23 / 4
 
 # Adam learning rate.
 learning_rate: 1e-5
@@ -29,7 +29,7 @@ learning_rate: 1e-5
 steps_per_report: 5
 
 # Number of training steps between validations.
-steps_per_eval: 50
+steps_per_eval: 95 # 190 / 2
 
 # Load path to resume training with the given adapter weights.
 resume_adapter_file: null
@@ -38,16 +38,16 @@ resume_adapter_file: null
 adapter_path: "models/frdm-Llama-3.1-8B-Write-Beat-to-Prose-v1"
 
 # Save the model every N iterations.
-save_every: 100
+save_every: 95 # 190 / 2
 
 # Evaluate on the test set after training
-test: false
+test: true
 
 # Number of test set batches, -1 uses the entire test set.
-test_batches: 100
+test_batches: 6 # ~25 / 4
 
 # Maximum sequence length.
-max_seq_length: 16384
+max_seq_length: 8192  # 1024 * 8
 
 # Use gradient checkpointing to reduce memory use.
 grad_checkpoint: false
