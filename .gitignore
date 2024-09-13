@@ -163,3 +163,4 @@ ansturm.txt
 wandb/
 models/
 .DS_Store
+data/
