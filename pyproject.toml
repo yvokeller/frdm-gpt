@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "frdm-gpt"
+version = "0.1.0"
+description = ""
+authors = ["Yvo Keller <hi@yvo.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mlx = "^0.17.2"
+mlx-lm = "^0.18.1"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
