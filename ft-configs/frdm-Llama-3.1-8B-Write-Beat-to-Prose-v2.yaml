@@ -14,10 +14,10 @@ seed: 0
 lora_layers: 16
 
 # Minibatch size.
-batch_size: 4
+batch_size: 2
 
 # Iterations to train for.
-iters: 190  # 190 * 5
+iters: 21  # 190 * 5
 
 # Number of validation batches, -1 uses the entire validation set.
 val_batches: 1  # ~23 / 4
@@ -29,7 +29,7 @@ learning_rate: 1e-6
 steps_per_report: 5
 
 # Number of training steps between validations.
-steps_per_eval: 95 # 190 / 2
+steps_per_eval: 5 # 190 / 2
 
 # Load path to resume training with the given adapter weights.
 resume_adapter_file: null
@@ -44,10 +44,10 @@ save_every: 5 # 190 / 2
 test: true
 
 # Number of test set batches, -1 uses the entire test set.
-test_batches: 1 # ~25 / 4
+test_batches: 2 # ~25 / 4
 
 # Maximum sequence length.
-max_seq_length: 8192  # 1024 * 8
+max_seq_length: 12288  # 1024 * 12
 
 # Use gradient checkpointing to reduce memory use.
 grad_checkpoint: false
