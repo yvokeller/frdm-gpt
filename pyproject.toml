@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.10"
 mlx = "^0.17.2"
 mlx-lm = "^0.18.1"
+python-dotenv = "^1.0.1"
 
 
 [build-system]
